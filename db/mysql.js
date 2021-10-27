@@ -1,14 +1,14 @@
 let mysql = require('mysql');
 
 const host = '10.0.0.131';
-const port = 3306;
+const port = '3306';
 const username = 'root';
 const password = 'sneakerhead';
 const db = 'test';
 let connection = mysql.createConnection({
     host: host,
     port: port,
-    username: username,
+    user: username,
     password: password,
     database: db
 });
